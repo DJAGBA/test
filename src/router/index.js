@@ -1,12 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import LoginView from '@/views/loginView.vue'
+import AdmininterView from '../views/AdmininterView.vue'
+import EnseignantView from '../views/EnseignantView.vue'
+import LoginView from '../views/LoginView.vue'
+import Login1View from '../views/Login1View.vue'
+import LoginV2iew from '../views/Login2View.vue'
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: HomeView,
     },
@@ -15,6 +21,26 @@ const router = createRouter({
       name: 'login',
       component: LoginView,
     },
+    {
+      path: '/login1',
+      name: 'login1',
+      component: Login1View,
+    },{
+      path: '/login2',
+      name: 'login2',
+      component: LoginV2iew,
+    },
+    {
+      path: '/admininter',
+      name: 'Admininter',
+      component: AdmininterView,
+    },
+    {
+      path: '/enseignant',
+      name: 'Enseignant',
+      component: EnseignantView,
+    },
+   
     {
       path: '/about',
       name: 'about',
