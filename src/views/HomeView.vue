@@ -60,7 +60,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color:rgb(238, 21, 21);
+  background-color:#f0f0f0;
   color: white;
   padding: 15px 20px;
   display: flex;
@@ -81,7 +81,7 @@ nav ul {
 
 
 nav a {
-  color: white;
+  color:red;
   text-decoration: none;
   font-size: 18px;
   padding: 10px 15px;
